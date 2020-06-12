@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- Page "Projet SIN" -->
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Julien Flusin - Projet - Sin</title>
+    <meta name="description" content="Projet de Sin de Julien Flusin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <script type="text/javascript" src="/js/discord.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
+    <link rel="icon" type="image/png" href="" />
+</head>
+
+<body>
+    <!-- Début de la navbar -->
+    <div class="">
+        <div class="w3-bar w3-light-green">
+            <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
+            <a href="/cv" class="w3-bar-item w3-button w3-hide-small">Mon CV</a>
+            <a href="/contact" class="w3-bar-item w3-button w3-hide-small">Me contacter</a>
+            <a href="/about" class="w3-bar-item w3-button w3-hide-small">À Propos</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
+        </div>
+        <div id="navbar" class="w3-bar-block w3-light-green w3-hide w3-hide-large w3-hide-medium">
+            <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
+            <a href="/cv" class="w3-bar-item w3-button">Mon CV</a>
+            <a href="/contact" class="w3-bar-item w3-button">Me contacter</a>
+            <a href="/about" class="w3-bar-item w3-button">À Propos</a>
+        </div>
+    </div>
+    <!-- Fin de la navbar -->
+    <img src="/counter.php" alt="" />
+    <br />
+    <div class="w3-container">
+        <div class="w3-card w3-padding-small w3-center">
+            <h1>Projet de Bac STI2D SIN </h1>
+            <h2>STI2D : Sciences et Technologies de l'Industrie et du Développement Durable <br /> SIN : Système d'Information et Numérique</h2>
+        </div>
+        <br />
+        <br />
+        <div class="w3-card w3-padding-small">
+            <h4>Ce projet consiste à créer un aquarium "connecté" pour qu'un aquariophile puisse :</h4>
+            <ul>
+                <li>Automatiser tous ses aquariums sur des pages web(une par aquarium)</li>
+                <li>Monitorer tous ses aquariums sur des pages web (une par aquarium)</li>
+            </ul>
+            <p>En tant que membre du projet de mon groupe (4 élèves), j'avais la responsabilité de créer l'IHM (Interface Homme-Machine) avec une carte ESP-32 (de la société Espressif), j'ai donc utilisé les librairies suivantes :</p>
+            <ul>
+                <li>ESPAsyncWebServer (Pour le serveur Web)</li>
+                <li>ESPAsyncWiFiManager (Pour la gestion de la connexion Wifi)</li>
+                <li>SPIFFS (Pour l'accès à la memoire flash)</li>
+                <li>EEPROM (Pour l'accès à l'EEPROM)</li>
+                <li>NTPClient (Pour l'accès au serveur NTP "europe.pool.ntp.org", de manière à toujours avoir l'heure et la date d'accessible pour les automatisations)</li>
+            </ul>
+            </h4>
+        </div>
+        <br />
+        <br />
+        <div class="w3-card w3-padding-small">
+            <h4>En résumé, ce projet m'a permis d'approfondir mes connaissances antérieures en C++ de mon premier stage et mes connaissances en C++ pour Arduino. J'ai également approfondi le language JavaScript qui m'intéressait beaucoup, et celui-ci m'a
+                permis dans ce projet, de faire le lien entre la page web Html & Css hébergée sur le serveur web interne dans l'ESP32 et le serveur web C++ dans l'esp32. Dans le but d'envoyer & récupérer des données de l'ESP32 sur ma page web via des
+                requêtes HTTP POST & GET.
+            </h4>
+        </div>
+        <br />
+        <br />
+        <div class="w3-card w3-padding-small w3-center">
+            <h2>Code source:</h2>
+            <a href="https://github.com/jul-fls/projetsin" target="_blank"><i class="fa fa-github fa-2x"></i> Le repository Github</a>
+            <br />
+            <br />
+        </div>
+        <br />
+        <br />
+        <div class="w3-card w3-padding-small w3-center">
+            <h2>Illustrations:</h2>
+            <h2>Les images sont cliquables pour que vous puissiez les agrandir</h2>
+            <hr />
+            <figure>
+                <a href="distrib.gif"><img src="distrib.gif" width=40% alt="Distribution de nourriture" title="Distribution de nourriture" /></a>
+                <figcaption>Distribution de nourriture<br />La led s'allume pendant une seconde puis s'éteint</figcaption>
+            </figure>
+            <figure>
+                <a href="distrib-normalle.png"><img src="distrib-normalle.png" width=40% alt="Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)" title="Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)"
+                    /></a>
+                <figcaption>Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)</figcaption>
+            </figure>
+            <figure>
+                <a href="distrib-manuelle.png"><img src="distrib-manuelle.png" width=40% alt="Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)" title="Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)"
+                    /></a>
+                <figcaption>Distributions de nourriture qui se mettent à jour après chaque distribution (automatique & manuelle)</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="eclairage-on.png"><img src="eclairage-on.png" width=40% alt="Allumage de l'éclairage sur la page" title="Allumage de l'éclairage sur la page" /></a>
+                <figcaption>Allumage de l'éclairage sur la page</figcaption>
+            </figure>
+            <figure>
+                <a href="eclairage-on-pic.jpg"><img src="eclairage-on-pic.jpg" width=40% alt="Allumage de l'éclairage en réel" title="Allumage de l'éclairage en réel" /></a>
+                <figcaption>Allumage de l'éclairage en réel</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="eclairage-off.png"><img src="eclairage-off.png" width=40% alt="Extinction de l'éclairage sur la page" title="Extinction de l'éclairage sur la page" /></a>
+                <figcaption>Extinction de l'éclairage sur la page</figcaption>
+            </figure>
+            <figure>
+                <a href="leds-off.jpg"><img src="leds-off.jpg" width=40% alt="Extinction de l'éclairage en réel" title="Extinction de l'éclairage en réel" /></a>
+                <figcaption>Extinction de l'éclairage en réel</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="chauffage-on.png"><img src="chauffage-on.png" width=40% alt="Allumage du chauffage sur la page" title="Allumage du chauffage sur la page" /></a>
+                <figcaption>Allumage du chauffage sur la page</figcaption>
+            </figure>
+            <figure>
+                <a href="chauffage-on-pic.jpg"><img src="chauffage-on-pic.jpg" width=40% alt="Allumage du chauffage en réel" title="Allumage du chauffage en réel" /></a>
+                <figcaption>Allumage du chauffage en réel</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="chauffage-off.png"><img src="chauffage-off.png" width=40% alt="Extinction du chauffage sur la page" title="Extinction du chauffage sur la page" /></a>
+                <figcaption>Extinction du chauffage sur la page</figcaption>
+            </figure>
+            <figure>
+                <a href="leds-off.jpg"><img src="leds-off.jpg" width=40% alt="Extinction du chauffage en réel" title="Extinction du chauffage en réel" /></a>
+                <figcaption>Extinction du chauffage en réel</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="chauffage-select.png"><img src="chauffage-select.png" width=40% alt="Choix de la température du chauffage sur la page" title="Choix de la température du chauffage sur la page" /></a>
+                <figcaption>Choix de la température du chauffage sur la page</figcaption>
+            </figure>
+            <figure>
+                <a href="chauffage-temp.png"><img src="chauffage-temp.png" width=40% alt="Affichage et choix de la température de l'eau sur la page" title="Affichage et choix de la température de l'eau sur la page" /></a>
+                <figcaption>Affichage et choix de la température de l'eau sur la page</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="auto-regulation-temperature-activee-popup.png"><img src="auto-regulation-temperature-activee-popup.png" width=40% alt="Popup d'activation de la régulation de température" title="Popup d'activation de la régulation de température" /></a>
+                <figcaption>Popup d'activation de la régulation de température</figcaption>
+            </figure>
+            <figure>
+                <a href="auto-regulation-temperature-activee.png"><img src="auto-regulation-temperature-activee.png" width=40% alt="Activation de la régulation de température sur la page" title="Activation de la régulation de température sur la page" /></a>
+                <figcaption>Activation de la régulation de température sur la page</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="auto-regulation-temperature-desactivee-popup.png"><img src="auto-regulation-temperature-desactivee-popup.png" width=40% alt="Popup de désactivation de la régulation de température" title="Popup de désactivation de la régulation de température" /></a>
+                <figcaption>Popup de désactivation de la régulation de température</figcaption>
+            </figure>
+            <figure>
+                <a href="auto-regulation-temperature-desactivee.png"><img src="auto-regulation-temperature-desactivee.png" width=40% alt="Désctivation de la régulation de température sur la page" title="Désctivation de la régulation de température sur la page" /></a>
+                <figcaption>Désctivation de la régulation de température sur la page</figcaption>
+            </figure>
+            <hr />
+            <figure>
+                <a href="breadboard.jpg"><img src="breadboard.jpg" width=40% alt="Montage électronique sur breadboard" title="Montage électronique sur breadboard" /></a>
+                <figcaption>Montage électronique sur breadboard<br />Le potentiomètre de 10KΩ sert à émuler une sonde de température</figcaption>
+            </figure>
+            <figure>
+                <a href="pc_page.png"><img src="pc_page.png" width=40% alt="Aperçu de la page sur Ordinateur" title="Aperçu de la page sur Ordinateur" /></a>
+                <figcaption>Aperçu de la page sur Ordinateur</figcaption>
+            </figure>
+            <figure>
+                <a href="tel_page.png"><img src="tel_page.png" width=40% alt="Aperçu de la page sur smartphone" title="Aperçu de la page sur smartphone" /></a>
+                <figcaption>Aperçu de la page sur smartphone</figcaption>
+            </figure>
+            <br />
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Retrouve moi sur mes réseaux</p>
+        <ul>
+            <li class="inline"><a href="https://facebook.com/julienflusin" target="_blank" rel="noopener" alt="Mon profil Facebook"><i
+                class="fa fa-facebook-official fa-2x w3-hover-opacity"></i></a></li>
+            <li class="inline"><a href="https://instagram.com/jul_fls" target="_blank" rel="noopener" alt="Mon profil Instagram"><i
+                class="fa fa-instagram fa-2x w3-hover-opacity"></i></a></li>
+            <li class="inline"><a href="https://twitter.com/FlusinJulien" target="_blank" rel="noopener" alt="Mon profil Twitter"><i
+                class="fa fa-twitter fa-2x w3-hover-opacity"></i></a></li>
+            <li class="inline"><a href="https://www.linkedin.com/in/julien-flusin/" target="_blank" rel="noopener" alt="Mon profil Linkedin"><i
+                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a></li>
+            <li class="inline"><a href="https://github.com/jul-fls" target="_blank" rel="noopener" alt="Mon profil Github"><i
+                class="fa fa-github fa-2x w3-hover-opacity"></i></a></li>
+            <li class="inline">
+                <div class="popup" onclick="discord()"><a><i
+                class="fa fa-discord fa-2x w3-hover-opacity"></i></a><span class="popuptext" id="discord">Julien_fls#0106 <i
+                    class="fa fa-times w3-hover-opacity"></i></span></div>
+            </li>
+        </ul>
+        <p>Fait en France</p>
+        <p>© 2020 Julien Flusin</p>
+    </footer>
+</body>
+
+</html>
