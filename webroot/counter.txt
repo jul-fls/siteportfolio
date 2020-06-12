@@ -1,0 +1,1 @@
+La valeur est 0 par défaut et s'incrémente à chaque visite (quand le fichier php "counter.php" détecte un nouveau viteur)
