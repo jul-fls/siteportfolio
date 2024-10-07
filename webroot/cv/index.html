@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="/css/cv.css">
     <link rel="stylesheet" href="/css/global.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/discord.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/navbar.js"></script>
     <link rel="icon" type="image/png" href="/pics/cv.png" />
 </head>
@@ -36,14 +35,12 @@
         <div class="w3-bar w3-light-green">
             <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button w3-hide-small w3-green">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button w3-hide-small">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button w3-hide-small">À Propos</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
         </div>
         <div id="navbar" class="w3-bar-block w3-light-green w3-hide w3-hide-large w3-hide-medium">
             <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button w3-green">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button">À Propos</a>
         </div>
     </div>
@@ -51,11 +48,8 @@
     <img src="/counter.php" alt="" />
     <br />
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
         <div class="w3-row-padding">
-
             <div class="w3-third">
-
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
                         <img src="/pics/moi.png" style="width:100%" alt="Photo de Profil">
@@ -69,90 +63,170 @@
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:julien@flusin.fr">julien@flusin.fr</a></p>
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="tel:+33617466563">(+33) 0617466563</a></p>
                         <hr>
-
                         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Compétences</b></p>
-                        <p><img src="/pics/yaml.png" width=10% alt="Yaml" title="Yaml" /> Yaml</p>
+                        <p><img src="/pics/pc_build.png" width=9% alt="Montage Hardware" title="Montage Hardware" /> Montage Hardware</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="pc_build"></div>
+                        </div>
+                        <p><img src="/pics/network.png" width=9% alt="Administration Réseau" title="Administration Réseau" /> Administration Réseau</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="admin_reseau"></div>
+                        </div>
+                        <p><img src="/pics/pc.png" width=9% alt="Administration Système" title="Administration Système" /> Administration Système</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="admin_sys"></div>
+                        </div>
+                        <p><img src="/pics/yaml.png" width=15% alt="Yaml" title="Yaml" /> Yaml</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="yaml"></div>
                         </div>
                         <p><img src="/pics/brackets.png" width=10% alt="Json" title="Json" /> Json</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:100% ">100%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="json"></div>
                         </div>
                         <p><img src="/pics/html.svg" width=10% alt="Html" title="Html" /> Html</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:80% ">80%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="html"></div>
                         </div>
-                        <p><img src="/pics/css.svg" width=10% alt="Css" title="Css" /> Css</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:65% ">65%</div>
+                        <p><img src="/pics/office.png" width=10% alt="Pack Office" title="Pack Office" /> Pack Office</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="pack_office"></div>
                         </div>
-                        <p><img src="/pics/cpp.png" width=10% alt="C++" title="C++" /> C++</p>
+                        <p><img src="/pics/php.svg" width=12% alt="Php" title="Php" /> Php</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:35% ">35%</div>
-                        </div>
-                        <p><img src="/pics/java.svg" width=10% alt="Java" title="Java" /> Java</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:30% ">30%</div>
-                        </div>
-                        <p><img src="/pics/php.svg" width=15% alt="Php" title="Php" /> Php</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:25% ">25%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="php"></div>
                         </div>
                         <p><img src="/pics/js.svg" width=10% alt="Javascript" title="Javascript" /> Javascript</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:10% ">10%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="js"></div>
+                        </div>
+                        <p><img src="/pics/css.svg" width=10% alt="Css" title="Css" /> Css</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small ">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="css"></div>
+                        </div>
+                        <p><img src="/pics/cpp.png" width=10% alt="C++" title="C++" /> C++</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small ">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="cpp"></div>
+                        </div>
+                        <p><img src="/pics/java.svg" width=10% alt="Java" title="Java" /> Java</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small ">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="java"></div>
                         </div>
                         <p><img src="/pics/python.svg" width=10% alt="Python" title="Python" /> Python</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small ">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal " style="width:5% ">5%</div>
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="python"></div>
                         </div>
                         <br>
-
                         <p class="w3-large w3-text-theme "><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal "></i>Langues</b></p>
                         <p><img src="/pics/flag-fr.svg" width=10% alt="Drapeau français" title="Drapeau français" /> Français</p>
-                        <div class="w3-light-grey w3-round-xlarge ">
-                            <div class="w3-center w3-round-xlarge w3-teal " style="height:24px;width:100% ">100%</div>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="fr"></div>
                         </div>
                         <p><img src="/pics/flag-en.svg" width=10% alt="Drapeau anglais" title="Drapeau anglais" /> Anglais</p>
-                        <div class="w3-light-grey w3-round-xlarge ">
-                            <div class="w3-center w3-round-xlarge w3-teal " style="height:24px;width:95% ">95%</div>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" id="en"></div>
                         </div>
                         <br>
                     </div>
                 </div>
                 <br>
             </div>
-
             <div class="w3-twothird ">
+                <script>
+                    function animate(el, width, maxwidth) {
+                        let speed = 30; //temps en ms entre chaque partie d'animation
+                        let id = setInterval(frame, speed);
 
+                        function frame() {
+                            if (width >= maxwidth) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                el.style.width = width + '%';
+                                el.innerHTML = width * 1 + '%';
+                            }
+                        }
+                        return width;
+                    }
+                    window.onload = function() {
+                        animate(document.getElementById("pc_build"), 0, 100);
+                        animate(document.getElementById("admin_reseau"), 0, 100);
+                        animate(document.getElementById("admin_sys"), 0, 100);
+                        animate(document.getElementById("yaml"), 0, 100);
+                        animate(document.getElementById("json"), 0, 100);
+                        animate(document.getElementById("html"), 0, 100);
+                        animate(document.getElementById("pack_office"), 0, 95);
+                        animate(document.getElementById("php"), 0, 95);
+                        animate(document.getElementById("js"), 0, 80);
+                        animate(document.getElementById("css"), 0, 40);
+                        animate(document.getElementById("cpp"), 0, 35);
+                        animate(document.getElementById("java"), 0, 30);
+                        animate(document.getElementById("python"), 0, 5);
+                        animate(document.getElementById("fr"), 0, 100);
+                        animate(document.getElementById("en"), 0, 97);
+                    }
+                </script>
+                <div class="w3-container w3-card w3-white w3-margin-bottom ">
+                    <h2 class="w3-text-grey w3-padding-16 "><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Contrat d'Alternance</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Alternance à l'école EPSI Bordeaux (33300) en France</b></h5>
+                        <h6 class="w3-opacity">Dans l'entreprise <a href="https://apside.com/" target="_blank" rel="noopener" alt="Site de l'entreprise Apside">Apside</a></h6>
+                        <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2022 - 2024</h6>
+                        <p>Dévops / Administrateur Système et Réseaux</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container ">
+                        <h5 class="w3-opacity "><b>Alternance au Lycée Sainte Famille Saintonge à Bordeaux (33000) en France</b></h5>
+                        <h6 class="w3-opacity">Dans l'entreprise <a href="https://www.lyceesaintefamille.com/" target="_blank" rel="noopener" alt="Site du Lycée Sainte Famille Saintonge">Lycée Sainte Famille Saintonge</a></h6>
+                        <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2020 - 2022</h6>
+                        <p>Administrateur Système et réseaux</p>
+                        <hr>
+                    </div>
+                </div>
                 <div class="w3-container w3-card w3-white w3-margin-bottom ">
                     <h2 class="w3-text-grey w3-padding-16 "><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Stages en entreprises</h2>
                     <div class="w3-container ">
-                        <h5 class="w3-opacity "><b>Stage de 4 semaines chez Dushow Bordeaux à Mérignac (33700) en France</b></h5>
+                        <h5 class="w3-opacity "><b>Stage de 4 semaines chez <a href="https://www.novelty-group.com/nos-agences-nouvelle-aquitaine" target="_blank" rel="noopener" alt="Site de l'entrprise Novelty Nouvelle-Aquitaine" >Novelty Nouvelle-Aquitaine</a> à Mérignac (33700) en France</b></h5>
                         <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>Juin 2019</h6>
                         <p>Animation 3D sur Houdini et découverte du système DMX et préparation de matériel évènementiel</p>
                         <hr>
                     </div>
                     <div class="w3-container ">
-                        <h5 class="w3-opacity "><b>Stage de 2 semaines chez Solvarea à Mérignac (33700) en France</b></h5>
+                        <h5 class="w3-opacity "><b>Stage de 2 semaines chez <a href="https://solvarea.com" target="_blank" rel="noopener" alt="Site de l'entreprise Solvarea">Solvarea</a> à Mérignac (33700) en France</b></h5>
                         <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>Juin 2018</h6>
                         <p>Réparation d’ordinateurs portables et fixes.</p>
                         <hr>
                     </div>
                     <div class="w3-container ">
-                        <h5 class="w3-opacity "><b>Stage de 1 semaine chez Intuisphère à Bègles (33100) en France</b></h5>
+                        <h5 class="w3-opacity "><b>Stage de 1 semaine chez <a href="https://www.intuisphere.com/fr/index.html" target="_blank" rel="noopener" alt="Site de l'entreprise Intuisphère">Intuisphère</a> à Bègles (33130) en France</b></h5>
                         <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>Mai 2017</h6>
                         <p>Développement de logiciels en C++ avec le Framework Qt.</p><br>
                     </div>
                 </div>
-
                 <div class="w3-container w3-card w3-white ">
                     <h2 class="w3-text-grey w3-padding-16 "><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal "></i>Éducation</h2>
                     <div class="w3-container ">
+                        <h5 class="w3-opacity "><b>Ecole EPSI Bordeaux</b></h5>
+                        <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2023 - 2025</h6>
+                        <p>Titre RNCP Niveau 7 (Expert en Ingénierie et Systèmes d'Informations) en Alternance</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container ">
+                        <h5 class="w3-opacity "><b>Ecole EPSI Bordeaux</b></h5>
+                        <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2022 - 2023</h6>
+                        <p>Titre RNCP Niveau 6 (Bachelor Concepteur Développeur d'Applications) en Alternance</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container ">
+                        <h5 class="w3-opacity "><b>Centre de Formation Sainte Famille Saintonge</b></h5>
+                        <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2020 - 2022</h6>
+                        <p>BTS SNIR en Alternance</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container ">
                         <h5 class="w3-opacity "><b>Lycée Sainte Famille Saintonge</b></h5>
                         <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>2018 - 2020</h6>
-                        <p>Baccaluréat Technologique STI2D SIN</p>
+                        <p>Classe de première et terminale pour un Baccaluréat Technologique STI2D SIN</p>
                         <hr>
                     </div>
                     <div class="w3-container ">
@@ -167,11 +241,8 @@
                         <p>Brevet des collèges</p><br>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
     <br />
     <br />
@@ -179,27 +250,20 @@
     <br />
     <footer class="w3-container w3-teal w3-center w3-margin-top ">
         <p>Retrouve moi sur mes réseaux</p>
-        <ul>
-            <li class="inline"><a href="https://facebook.com/julienflusin" target="_blank" rel="noopener" alt="Mon profil Facebook"><i
-                class="fa fa-facebook-official fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://instagram.com/jul_fls" target="_blank" rel="noopener" alt="Mon profil Instagram"><i
-                class="fa fa-instagram fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://twitter.com/FlusinJulien" target="_blank" rel="noopener" alt="Mon profil Twitter"><i
-                class="fa fa-twitter fa-2x w3-hover-opacity"></i></a></li>
+        <ul style="padding-inline-start: 0%;">
             <li class="inline"><a href="https://www.linkedin.com/in/julien-flusin/" target="_blank" rel="noopener" alt="Mon profil Linkedin"><i
-                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a></li>
+                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>
+            </li>
             <li class="inline"><a href="https://github.com/jul-fls" target="_blank" rel="noopener" alt="Mon profil Github"><i
-                class="fa fa-github fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline">
-                <div class="popup" onclick="discord()"><a><i
-                class="fa fa-discord fa-2x w3-hover-opacity"></i></a><span class="popuptext" id="discord">Julien_fls#0106 <i
-                    class="fa fa-times w3-hover-opacity"></i></span></div>
+                class="fa fa-github fa-2x w3-hover-opacity"></i></a>
             </li>
         </ul>
         <p>Fait en France</p>
-        <p>© 2020 Julien Flusin</p>
+        <p>© 2020-<span id="year"></span> Julien Flusin</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
-
 </body>
 
 </html>

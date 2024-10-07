@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/discord.js"></script>
     <script type="text/javascript" src="/js/navbar.js"></script>
     <link rel="icon" type="image/png" href="" />
 </head>
@@ -24,14 +23,12 @@
         <div class="w3-bar w3-light-green">
             <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button w3-hide-small">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button w3-hide-small">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button w3-hide-small">À Propos</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
         </div>
         <div id="navbar" class="w3-bar-block w3-light-green w3-hide w3-hide-large w3-hide-medium">
             <a href="/" class="w3-bar-item w3-button">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button">À Propos</a>
         </div>
     </div>
@@ -47,15 +44,14 @@
         <div class="w3-card w3-padding-small">
             <h4>Ce projet consiste à créer un serveur Minecraft en version 1.12.2.<br /> Ce serveur fonctionne avec des mods (fichiers .jar permettant d'ajouter / modifier le jeu) grâce à l'API Forge.<br /> Il fonctionne également avec des plugins (fichiers
                 .jars permettant d'ajouter des fonctionnalités coté serveur grâce à l'API Spigot.<br /> Normalement ces 2 APIs ne sont pas compatibles mais grâce à <a href="https://github.com/Luohuayu/CatServer">ce projet Github (CatServer)</a>, les 2
-                APIs sont réunis dans le meme fichier .jar de lancement du serveur.<br /> Ce projet a donc pour buts de :
+                APIs sont réunies dans le même fichier .jar de lancement du serveur.<br /> Ce projet a donc pour buts de :
             </h4>
             <ul>
-                <li>Créer notre propre commaunauté autour de l'univers de Minecraft en tant que fans de ce jeu</li>
-                <li>Permettre de nous aider financièrement à payer notre serveur qui était privé au début (que pour les fondateurs), et qui coutait aussi cher que maintenant chez notre ancien hébergeur, car plus il y a de personnes qui paient, moins c'est
-                    cher pour chacun</li>
+                <li>Créer notre propre communauté autour de l'univers de Minecraft en tant que fans de ce jeu</li>
+                <li>Permettre de nous aider financièrement à payer notre serveur qui à son début, était privé (que pour les fondateurs)</li>
                 <li>Me permettre de découvrir le fonctionnement d'une base de données MySQL (les tables, les colonnes, ids, etc..)</li>
                 <li>Me permettre d'apprendre la configuration des mods & plugins Minecraft</li>
-                <li>Me permettre de comprendre l'importance de l'optimisation quand on développe quoi que ce soit, ce qui est loin d'etre le cas pour les serveurs minecraft</li>
+                <li>Me permettre de comprendre l'importance de l'optimisation du developpement sous toutes ses formes, ce qui est loin d'etre le cas pour les serveurs minecraft</li>
                 <li>Faire de nouvelles connaissances et tisser des liens, avec les nouveaux joueurs sur le serveur</li>
             </ul>
             </h4>
@@ -63,8 +59,8 @@
         <br />
         <br />
         <div class="w3-card w3-padding-small">
-            <h4>En résumé, ce projet, m'a permis de découvrir <a href="https://github.com/Luohuayu/CatServer">le projet CatServer</a> que je ne connaissais absolument pas jusque là et de faire de nouvelles connaissances, le developpement en java de plugins
-                et mods, l'administration d'une base de donnée MySQL et tisser du lien, ce que j'adore faire.</h4>
+            <h4>En résumé, ce projet, m'a permis de découvrir <a href="https://github.com/Luohuayu/CatServer">le projet CatServer</a> que je ne connaissais absolument pas jusque là, le développement en java de plugins et mods, l'administration d'une base
+                de donnée MySQL et tisser des liens, ce qui est sources d'informations et de contacts humains.</h4>
         </div>
         <br />
         <br />
@@ -92,25 +88,19 @@
     <br />
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <p>Retrouve moi sur mes réseaux</p>
-        <ul>
-            <li class="inline"><a href="https://facebook.com/julienflusin" target="_blank" rel="noopener" alt="Mon profil Facebook"><i
-                class="fa fa-facebook-official fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://instagram.com/jul_fls" target="_blank" rel="noopener" alt="Mon profil Instagram"><i
-                class="fa fa-instagram fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://twitter.com/FlusinJulien" target="_blank" rel="noopener" alt="Mon profil Twitter"><i
-                class="fa fa-twitter fa-2x w3-hover-opacity"></i></a></li>
+        <ul style="padding-inline-start: 0%;">
             <li class="inline"><a href="https://www.linkedin.com/in/julien-flusin/" target="_blank" rel="noopener" alt="Mon profil Linkedin"><i
-                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a></li>
+                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>
+            </li>
             <li class="inline"><a href="https://github.com/jul-fls" target="_blank" rel="noopener" alt="Mon profil Github"><i
-                class="fa fa-github fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline">
-                <div class="popup" onclick="discord()"><a><i
-                class="fa fa-discord fa-2x w3-hover-opacity"></i></a><span class="popuptext" id="discord">Julien_fls#0106 <i
-                    class="fa fa-times w3-hover-opacity"></i></span></div>
+                class="fa fa-github fa-2x w3-hover-opacity"></i></a>
             </li>
         </ul>
         <p>Fait en France</p>
-        <p>© 2020 Julien Flusin</p>
+        <p>© 2020-<span id="year"></span> Julien Flusin</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 

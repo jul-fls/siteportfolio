@@ -23,14 +23,12 @@
         <div class="w3-bar w3-light-green">
             <a href="/" class="w3-bar-item w3-button w3-green">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button w3-hide-small">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button w3-hide-small">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button w3-hide-small">À Propos</a>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
         </div>
         <div id="navbar" class="w3-bar-block w3-light-green w3-hide w3-hide-large w3-hide-medium">
             <a href="/" class="w3-bar-item w3-button w3-green">Mes Réalisations</a>
             <a href="/cv" class="w3-bar-item w3-button">Mon CV</a>
-            <a href="/contact" class="w3-bar-item w3-button">Me contacter</a>
             <a href="/about" class="w3-bar-item w3-button">À Propos</a>
         </div>
     </div>
@@ -64,6 +62,10 @@
                             <figcaption>Css</figcaption>
                         </figure>
                         <figure>
+                            <img src="/pics/js.svg" width=60px alt="Js" title="Js" />
+                            <figcaption>Js</figcaption>
+                        </figure>
+                        <figure>
                             <img src="/pics/php.svg" width=90px alt="Php" title="Php" />
                             <figcaption>Php</figcaption>
                         </figure>
@@ -72,7 +74,7 @@
                 </div>
             </div>
             <br />
-            <h4 class="w3-center">En résumé, ce projet m'a permis d'acquérir plus d'expérience en HTML, CSS et PHP, car je l'ai entièrement fait moi même.</h4>
+            <h4 class="w3-center">En résumé, ce projet m'a permis d'acquérir plus d'expérience en HTML, CSS, Js et PHP, car je l'ai entièrement fait moi même.</h4>
             <br />
         </div>
         <br />
@@ -119,7 +121,7 @@
             <a href="/launcherbiscuicraft">
                 <h1 class="w3-center">Launcher Minecraft de Biscuicraft</h1>
             </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janvier 2020 -> Maintenant</h6>
+            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janvier 2020 -> Mars 2021</h6>
             <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
                 <div class="">
                     <h3>Principaux languages utilisés (du + au - utilisé)</h3>
@@ -194,7 +196,7 @@
             <a href="/wsbiscuicraft">
                 <h1 class="w3-center">Site web Biscuicraft.fr</h1>
             </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2019 -> Maintenant</h6>
+            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2019 -> Mars 2021</h6>
             <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
                 <div class="">
                     <h3>Principaux languages utilisés (du + au - utilisé)</h3>
@@ -235,7 +237,7 @@
             <a href="/srvmcbiscuicraft">
                 <h1 class="w3-center">Serveur Minecraft "Biscuicraft"</h1>
             </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Avril 2019 -> Maintenant
+            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Avril 2019 -> Mars 2021
             </h6>
             <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
                 <div class="">
@@ -275,25 +277,19 @@
     <br />
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <p>Retrouve moi sur mes réseaux</p>
-        <ul>
-            <li class="inline"><a href="https://facebook.com/julienflusin" target="_blank" rel="noopener" alt="Mon profil Facebook"><i
-            class="fa fa-facebook-official fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://instagram.com/jul_fls" target="_blank" rel="noopener" alt="Mon profil Instagram"><i
-            class="fa fa-instagram fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline"><a href="https://twitter.com/FlusinJulien" target="_blank" rel="noopener" alt="Mon profil Twitter"><i
-            class="fa fa-twitter fa-2x w3-hover-opacity"></i></a></li>
+        <ul style="padding-inline-start: 0%;">
             <li class="inline"><a href="https://www.linkedin.com/in/julien-flusin/" target="_blank" rel="noopener" alt="Mon profil Linkedin"><i
-            class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a></li>
+                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>
+            </li>
             <li class="inline"><a href="https://github.com/jul-fls" target="_blank" rel="noopener" alt="Mon profil Github"><i
-            class="fa fa-github fa-2x w3-hover-opacity"></i></a></li>
-            <li class="inline">
-                <div class="popup" onclick="discord()"><a><i
-            class="fa fa-discord fa-2x w3-hover-opacity"></i></a><span class="popuptext" id="discord">Julien_fls#0106 <i
-                class="fa fa-times w3-hover-opacity"></i></span></div>
+                class="fa fa-github fa-2x w3-hover-opacity"></i></a>
             </li>
         </ul>
         <p>Fait en France</p>
-        <p>© 2020 Julien Flusin</p>
+        <p>© 2020-<span id="year"></span> Julien Flusin</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 
