@@ -1,9 +1,0 @@
-[Interface]
-Address = 10.0.0.2/32
-PrivateKey = kEkObifdu7stXhrzDZTmanOrH+fyigm/pVLyLdUNSVc=
-DNS = 8.8.8.8
-
-[Peer]
-PublicKey = 4YmTo2ccPK6Zs8TM950QnY+x61c5wefi1DW+8PVp9Us=
-AllowedIPs = 0.0.0.0/0,::/0
-Endpoint = 2.tcp.eu.ngrok.io:14755
