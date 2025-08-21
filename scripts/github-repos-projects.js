@@ -9,7 +9,7 @@ function cardHTML(r) {
         <a href="${r.html_url}" target="_blank" rel="noopener" class="block h-full">
         <div class="flex items-start justify-between gap-3">
             <h3 class="text-base font-semibold leading-tight line-clamp-2">${r.name}</h3>
-            <span class="text-lg" aria-hidden="true">🐙</span>
+            <img class="h-8" aria-hidden="true" src="octocat.svg" alt="Octocat"></img>
         </div>
         <p class="mt-1 text-xs text-gray-500">${lang} • MAJ ${updated}</p>
         <p class="mt-3 text-sm text-gray-700 line-clamp-3">${desc}</p>
