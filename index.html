@@ -1,295 +1,344 @@
 <!DOCTYPE html>
-<!-- Page "Mes Réalisations (Accueil)" -->
-<html lang="fr">
+<html lang="fr" class="bg-gray-50 text-gray-900">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Julien Flusin - PortFolio</title>
-    <meta name="description" content="Site vitrine de Julien Flusin" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/w3.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/discord.js"></script>
-    <script type="text/javascript" src="/js/navbar.js"></script>
-    <link rel="icon" type="image/png" href="/pics/portfolio.png" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Julien Flusin — Portfolio</title>
+	<meta name="description" content="Portfolio de Julien Flusin : expériences, compétences, formation et projets." />
+	<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/50296610?v=4" />
+	<script src="scripts/tailwind.min.js"></script>
+	<script src="scripts/showdown.min.js"></script>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
 </head>
 
-<body>
-    <!-- Début de la navbar -->
-    <div class="">
-        <div class="w3-bar w3-light-green">
-            <a href="/" class="w3-bar-item w3-button w3-green">Mes Réalisations</a>
-            <a href="/cv" class="w3-bar-item w3-button w3-hide-small">Mon CV</a>
-            <a href="/about" class="w3-bar-item w3-button w3-hide-small">À Propos</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBar()">&#9776;</a>
-        </div>
-        <div id="navbar" class="w3-bar-block w3-light-green w3-hide w3-hide-large w3-hide-medium">
-            <a href="/" class="w3-bar-item w3-button w3-green">Mes Réalisations</a>
-            <a href="/cv" class="w3-bar-item w3-button">Mon CV</a>
-            <a href="/about" class="w3-bar-item w3-button">À Propos</a>
-        </div>
-    </div>
-    <!-- Fin de la navbar -->
-    <br />
-    <div class="w3-container">
-        <div class="w3-card w3-center w3-xlarge w3-padding-small">
-            <h1>Mes Réalisations (du + au - récent)</h1>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="w3-card">
-            <a href="/siteactuel">
-                <h1 class="w3-center">Le site que vous regardez actuellement (flusin.fr)</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>4 Juin 2020 -> Maintenant
-            </h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/html.svg" width=40px alt="HTML" title="HTML" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/css.svg" width=60px alt="Css" title="Css" />
-                            <figcaption>Css</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/js.svg" width=60px alt="Js" title="Js" />
-                            <figcaption>Js</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/php.svg" width=90px alt="Php" title="Php" />
-                            <figcaption>Php</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">En résumé, ce projet m'a permis d'acquérir plus d'expérience en HTML, CSS, Js et PHP, car je l'ai entièrement fait moi même.</h4>
-            <br />
-        </div>
-        <br />
-        <br />
-        <div class="w3-card">
-            <a href="/projetsin">
-                <h1 class="w3-center">Projet de Bac STI2D SIN (Arduino "ESP32")</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janvier 2020 -> Mi Avril 2020</h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/cpp.png" width=40px alt="C++" title="C++" />
-                            <figcaption>C++</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/html.svg" width=40px alt="HTML" title="HTML" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/js.svg" width=90px alt="Javascript" title="JavaScript" />
-                            <figcaption>Js</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/css.svg" width=60px alt="Css" title="Css" />
-                            <figcaption>Css</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">Ce projet m'a permis d'approfondir mes connaissances antérieures en C++ de mon premier stage et mes connaissances en C++ pour Arduino.<br /> J'ai également approfondi le language JavaScript qui m'intéressait beaucoup, <br /> et celui-ci m'a
-                permis dans ce projet, de faire le lien entre la page web Html & Css hébergée sur le serveur web interne dans l'ESP32 et le serveur web C++ dans l'esp32. <br /> Dans le but d'envoyer & récupérer des données de l'ESP32 sur ma page web via
-                des requêtes HTTP POST & GET.
-            </h4>
-            <br />
-        </div>
-        <br/>
-        <br/>
-        <div class="w3-card">
-            <a href="/launcherbiscuicraft">
-                <h1 class="w3-center">Launcher Minecraft de Biscuicraft</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janvier 2020 -> Mars 2021</h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/java.svg" width=40px alt="Java" title="Java" />
-                            <figcaption>Java</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/php.svg" width=90px alt="Php" title="Php" />
-                            <figcaption>Php</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/html.svg" width=40px alt="HTML" title="HTML" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">Ce projet m'a permis d'apprendre les bases du language Java (syntaxe, classes, fonctions, méthodes, etc...), qui me servent encore aujourd'hui.<br /> J'ai même eu besoin de mes connaissances Html pour une partie du code, ce qui m'a permis
-                de mélanger nouveautés (Java) et connaissances antérieures (Html & Php).
-            </h4>
-            <br />
-        </div>
-        <br />
-        <br />
-        <div class="w3-card">
-            <a href="/domotique">
-                <h1 class="w3-center">Serveur domotique Home Assistant sous sa forme avec Addon Store (Hass.io)</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Juillet 2019 -> Maintenant</h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/yaml.png" width=110px alt="Yaml" title="Yaml" />
-                            <figcaption>Yaml</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/python.svg" width=40px alt="Python" title="Python" />
-                            <figcaption>Python</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/docker.svg" width=90px alt="Docker" title="Docker" />
-                            <figcaption>Docker</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/html.svg" width=40px alt="HTML" title="HTML" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/css.svg" width=60px alt="Css" title="Css" />
-                            <figcaption>Css</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">Ce projet m'a permis de créer mon premier serveur à partir d'un vieux pc qui ne servait plus, <br /> en installant "Linux Mint" puis Docker et enfin Hass.io, pour pouvoir le configurer en utilisant le YAML dans le but de lui redonner une seconde
-                vie,
-                <br /> mais surtout afin d'automatiser ma maison, pour les taches quotidiennes, liste de courses, monitoring, serveur de stockage, etc.., et d'apprendre à me servir de Linux, car je n'étais habitué qu'à Windows jusque là, et encore approfondir
-                mes connaissances en YAML.</h4>
-            <br />
-        </div>
-        <br />
-        <br />
-        <div class="w3-card">
-            <a href="/wsbiscuicraft">
-                <h1 class="w3-center">Site web Biscuicraft.fr</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mai 2019 -> Mars 2021</h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/php.svg" width=90px alt="Php" title="Php" />
-                            <figcaption>Php</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/sql.png" width=90px alt="SQL" title="SQL" />
-                            <figcaption>SQL</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/js.svg" width=90px alt="Javascript" title="JavaScript" />
-                            <figcaption>Js</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/html.svg" width=40px alt="HTML" title="HTML" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/css.svg" width=60px alt="Css" title="Css" />
-                            <figcaption>Css</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">Ce projet, bien que réalisé avec un CMS open-source (Content Management System) (MineWeb) par manque de temps,<br /> m'a quand même permis de le modifier moi-même par son côté open-source et documenté, <br /> ce qui m'as permis d'approfondir
-                mes connaissances en Php, Css, Html et de faire la découverte d'un nouveau type de fichier le .ctp,<br /> qui est le "CakePhp Template" qui sert aux vues dans CakePHP le framework de ce CMS, qui est globalement rempli de code Php mais
-                pas que.. d'où son extension de fichier particulière.</h4>
-            <br />
-        </div>
-        <br />
-        <br />
-        <div class="w3-card">
-            <a href="/srvmcbiscuicraft">
-                <h1 class="w3-center">Serveur Minecraft "Biscuicraft"</h1>
-            </a>
-            <h6 class="w3-text-teal w3-center"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Avril 2019 -> Mars 2021
-            </h6>
-            <div class="w3-card w3-margin w3-padding-small" style="text-align: center;">
-                <div class="">
-                    <h3>Principaux languages utilisés (du + au - utilisé)</h3>
-                    <div>
-                        <figure>
-                            <img src="/pics/yaml.png" width=110px alt="Yaml" title="Yaml" />
-                            <figcaption>Yaml</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/brackets.png" width=60px alt="Json" title="Json" />
-                            <figcaption>Json</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/java.svg" width=40px alt="Java" title="Java" />
-                            <figcaption>Java</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="/pics/sql.png" width=90px alt="SQL" title="SQL" />
-                            <figcaption>SQL</figcaption>
-                        </figure>
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <br />
-            <h4 class="w3-center">Ce projet m'a permis d'approfondir le langage Yaml et Json. J'ai également découvert la création des mods (Forge) & plugins (Spigot) minecraft à l'aide du language Java ainsi que le fonctionnement d'une base de données MySQL (les tables, les
-                colonnes, ids, etc..).</h4>
-            <br />
-        </div>
-        <br />
-        <br />
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Retrouve moi sur mes réseaux</p>
-        <ul style="padding-inline-start: 0%;">
-            <li class="inline"><a href="https://www.linkedin.com/in/julien-flusin/" target="_blank" rel="noopener" alt="Mon profil Linkedin"><i
-                class="fa fa-linkedin fa-2x w3-hover-opacity"></i></a>
-            </li>
-            <li class="inline"><a href="https://github.com/jul-fls" target="_blank" rel="noopener" alt="Mon profil Github"><i
-                class="fa fa-github fa-2x w3-hover-opacity"></i></a>
-            </li>
-        </ul>
-        <p>Fait en France</p>
-        <p>© 2020-<span id="year"></span> Julien Flusin</p>
-        <script>
-            document.getElementById("year").innerHTML = new Date().getFullYear();
-        </script>
-    </footer>
+<body class="font-sans">
+	<!-- Navbar -->
+	<nav class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur shadow">
+		<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+			<a href="#" class="font-semibold">Julien Flusin</a>
+			<div class="hidden md:flex gap-6 text-sm">
+				<a href="#about" class="hover:text-blue-600">À propos</a>
+				<a href="#skills" class="hover:text-blue-600">Compétences</a>
+				<a href="#experiences" class="hover:text-blue-600">Expériences</a>
+				<a href="#education" class="hover:text-blue-600">Éducation</a>
+				<a href="#contact" class="hover:text-blue-600">Contact</a>
+			</div>
+			<a href="#contact"
+				class="md:hidden inline-flex items-center px-3 py-1.5 rounded bg-blue-600 text-white text-sm">Contact</a>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<header class="relative pt-24">
+		<div class="max-w-6xl mx-auto px-6 py-16 rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+			<div class="grid md:grid-cols-[160px,1fr] gap-8 items-center">
+				<img src="https://avatars.githubusercontent.com/u/50296610?v=4" alt="Photo de profil"
+					class="w-40 h-40 rounded-2xl object-cover shadow-lg ring-2 ring-white/40" />
+				<div>
+					<h1 class="text-4xl md:text-5xl font-extrabold">Bonjour, je suis Julien Flusin</h1>
+					<p class="mt-4 text-white/90 text-lg">
+						Dévops / Administrateur Systèmes & Réseaux — passionné d'automatisation, d'infra et de dev.
+					</p>
+					<div class="mt-6 flex flex-wrap gap-3">
+						<a href="https://github.com/jul-fls/jul-fls/blob/master/CV.pdf"
+							class="inline-flex items-center px-4 py-2 rounded-lg bg-white text-blue-700 font-medium shadow hover:bg-gray-50">
+							📄 Voir mon CV
+						</a>
+						<a href="#projects"
+							class="inline-flex items-center px-4 py-2 rounded-lg bg-black/20 text-white font-medium shadow hover:bg-black/30">
+							🔧 Mes projets
+						</a>
+					</div>
+					<!-- Captcha + infos protégées -->
+					<div class="mt-6 text-sm text-white/90 flex flex-col gap-y-3">
+						<span>📍 Bordeaux, FR</span>
+						<p id="captcha-invalid-header">Veuillez prouver que vous n'êtes pas un robot via le captcha afin
+							de voir mes informations de contact.</p>
+						<div id="protected-info" class="hidden flex-col gap-y-2">
+							<a id="email-header" href="mailto:" class="underline underline-offset-4"></a>
+							<a id="phone-header" href="tel:" class="underline underline-offset-4">📞</a>
+						</div>
+						<div id="cf-turnstile" class="cf-turnstile" data-sitekey="0x4AAAAAABtnpleanyRmkd7B"
+							data-callback="onTurnstileSuccess"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- À propos -->
+	<section id="about" class="max-w-6xl mx-auto px-6 py-16">
+		<h2 class="text-3xl font-bold">À propos</h2>
+		<p class="mt-4 text-gray-700 leading-relaxed">
+			Développeur en devenir de <span id="age"></span> ans, passionné d'informatique depuis l'âge de 9 ans, je
+			conçois des solutions concrètes alliant développement et administration systèmes/réseaux.
+			Curieux, motivé et rigoureux, j'aime automatiser, industrialiser et livrer des projets de qualité.
+
+			Fort de trois stages en entreprise et d'une expérience en alternance, j'ai pu découvrir différents
+			environnements et affiner mon esprit d'analyse. Autonome et créatif, je m'investis pleinement dans mes
+			projets tout en restant à l'écoute des retours et conseils.
+
+			En parallèle, je parle couramment anglais et pratique l'audiovisuel depuis mes 16 ans (tournage, montage
+			vidéo, prise de son, photographie et retouche).
+			Ce portfolio regroupe mes expériences, mes projets, mes compétences et ma formation, reflets de mon parcours
+			et de ma passion pour le numérique.
+		</p>
+	</section>
+
+	<!-- Compétences -->
+	<section id="skills" class="bg-gray-100">
+		<div class="max-w-6xl mx-auto px-6 py-16">
+			<h2 class="text-3xl font-bold">Compétences</h2>
+			<p class="mt-3 text-gray-700">
+				Panorama de ce que j'utilise au quotidien ou en projets : développement, systèmes & réseaux,
+				DevOps/infra et audiovisuel.
+			</p>
+
+			<!-- Catégories -->
+			<div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+				<!-- Développement -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">💻</span>
+						<h3 class="text-xl font-semibold">Développement</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>JavaScript (Node.js, Express, TypeScript)</li>
+						<li>PHP (Symfony, Laravel, bases WordPress)</li>
+						<li>Python (Django, scripts d'automatisation)</li>
+						<li>Java (Spring, Android, Gradle, Qt)</li>
+						<li>C / C++ — projets académiques & Arduino</li>
+						<li>Frontend : HTML5, CSS3, TailwindCSS</li>
+					</ul>
+				</article>
+
+				<!-- Systèmes & Réseaux -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">🖧</span>
+						<h3 class="text-xl font-semibold">Systèmes & Réseaux</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>Linux (Debian/Ubuntu, shell scripting)</li>
+						<li>Windows Server — annuaire, services réseau</li>
+						<li>Cloudflare, pfSense, VPN, VLAN</li>
+						<li>Apache, Nginx (hébergement web & reverse proxy)</li>
+					</ul>
+				</article>
+
+				<!-- DevOps & Bases de données -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">🚀</span>
+						<h3 class="text-xl font-semibold">DevOps & Data</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>Docker, Docker Compose, Podman, Rancher, Kubernetes</li>
+						<li>CI/CD : GitLab CI, GitHub Actions</li>
+						<li>Bases de données : MySQL, MariaDB, PostgreSQL, SQLite, MongoDB</li>
+						<li>Monitoring & tests : Postman, Insomnia</li>
+					</ul>
+				</article>
+
+				<!-- Audiovisuel -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">🎬</span>
+						<h3 class="text-xl font-semibold">Audiovisuel</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>Photoshop, Figma, Canva</li>
+						<li>Tournage & montage (Sony Vegas Pro)</li>
+						<li>Photo & retouche (Photoshop, Lightroom)</li>
+						<li>Prise de vue (reflex, hybride)</li>
+						<li>Prise de son</li>
+					</ul>
+				</article>
+
+				<!-- Langues -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">🌍</span>
+						<h3 class="text-xl font-semibold">Langues</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>Français — courant</li>
+						<li>Anglais — courant (technique & pro)</li>
+					</ul>
+				</article>
+
+				<!-- Soft skills -->
+				<article class="p-6 bg-white rounded-2xl shadow">
+					<div class="flex items-center gap-3">
+						<span class="text-2xl">🧭</span>
+						<h3 class="text-xl font-semibold">Soft skills</h3>
+					</div>
+					<ul class="mt-4 space-y-2 text-gray-700">
+						<li>Curiosité, rigueur, esprit d'analyse</li>
+						<li>Autonomie & sens du détail</li>
+						<li>Écoute des feedbacks, travail en équipe</li>
+					</ul>
+				</article>
+			</div>
+
+			<!-- Liste complète technos -->
+			<div class="mt-12">
+				<h3 class="text-2xl font-semibold mb-4">Technos & Outils</h3>
+				<div class="flex flex-wrap gap-2" id="tech-fill"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Expériences -->
+	<section id="experiences" class="max-w-6xl mx-auto px-6 py-16">
+		<h2 class="text-3xl font-bold">Expériences</h2>
+		<div class="mt-10 relative border-l border-gray-300">
+			<!-- Alternance EPSI / Apside -->
+			<article class="mb-10 ml-6">
+				<span class="absolute -left-3 mt-1 w-6 h-6 bg-blue-600 rounded-full ring-4 ring-white"></span>
+				<h3 class="text-xl font-semibold">Contrat d'Alternance — <a href="https://www.epsi.fr/campus/bordeaux"
+						target="_blank" rel="noopener" class="text-blue-600 underline">EPSI Bordeaux</a> & <a
+						href="https://apside.com/" target="_blank" rel="noopener" class="text-blue-600 underline">Apside
+						Bordeaux</a></h3>
+				<time class="text-sm text-gray-500">2022 — 2025</time>
+				<p class="mt-2 text-gray-700">Dévops / Administrateur Systèmes & Réseaux</p>
+			</article>
+
+			<!-- Alternance Lycée -->
+			<article class="mb-10 ml-6">
+				<span class="absolute -left-3 mt-1 w-6 h-6 bg-indigo-600 rounded-full ring-4 ring-white"></span>
+				<h3 class="text-xl font-semibold">Contrat d'Alternance — <a href="https://www.lyceesaintefamille.com/"
+						target="_blank" rel="noopener" class="text-blue-600 underline">Lycée Sainte Famille
+						Saintonge</a>, Bordeaux</h3>
+				<time class="text-sm text-gray-500">2020 — 2022</time>
+				<p class="mt-2 text-gray-700">Administrateur Systèmes & Réseaux</p>
+			</article>
+
+			<!-- Stages -->
+			<article class="mb-10 ml-6">
+				<span class="absolute -left-3 mt-1 w-6 h-6 bg-emerald-600 rounded-full ring-4 ring-white"></span>
+				<h3 class="text-xl font-semibold">Stage — <a
+						href="https://www.novelty-group.com/nos-agences-nouvelle-aquitaine" target="_blank"
+						rel="noopener" class="text-blue-600 underline">Novelty Nouvelle-Aquitaine</a>, Mérignac</h3>
+				<time class="text-sm text-gray-500">Juin 2019</time>
+				<p class="mt-2 text-gray-700">
+					Animation 3D sur Houdini, découverte du système DMX, préparation de matériel évènementiel.
+				</p>
+			</article>
+
+			<article class="mb-10 ml-6">
+				<span class="absolute -left-3 mt-1 w-6 h-6 bg-rose-600 rounded-full ring-4 ring-white"></span>
+				<h3 class="text-xl font-semibold">Stage — <a href="https://www.solvarea.com/" target="_blank"
+						rel="noopener" class="text-blue-600 underline">Solvarea</a>, Mérignac</h3>
+				<time class="text-sm text-gray-500">Juin 2018</time>
+				<p class="mt-2 text-gray-700">Réparation d'ordinateurs portables et fixes.</p>
+			</article>
+
+			<article class="mb-2 ml-6">
+				<span class="absolute -left-3 mt-1 w-6 h-6 bg-amber-600 rounded-full ring-4 ring-white"></span>
+				<h3 class="text-xl font-semibold">Stage — <a href="https://www.intuisphere.com/" target="_blank"
+						rel="noopener" class="text-blue-600 underline">Intuisphère</a>, Bègles</h3>
+				<time class="text-sm text-gray-500">Mai 2017</time>
+				<p class="mt-2 text-gray-700">Développement logiciel en C++ avec le framework Qt.</p>
+			</article>
+		</div>
+	</section>
+
+	<!-- Éducation -->
+	<section id="education" class="bg-gray-100">
+		<div class="max-w-6xl mx-auto px-6 py-16">
+			<h2 class="text-3xl font-bold">Éducation</h2>
+			<div class="mt-8 grid md:grid-cols-2 gap-6">
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a href="https://www.epsi.fr/programmes/ingenierie-informatique"
+							target="_blank" rel="noopener">EPSI Bordeaux</a></h3>
+					<div class="text-sm text-gray-500">2023 — 2025</div>
+					<p class="mt-2 text-gray-700">Titre RNCP Niveau 7 (35584)</p>
+					<p class="mt-2 text-gray-700">Expert en Ingénierie et Systèmes d'Informations (Alternance)</p>
+				</div>
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a href="https://www.epsi.fr/programmes/bachelor-dev-ops" target="_blank"
+							rel="noopener">EPSI Bordeaux</a></h3>
+					<div class="text-sm text-gray-500">2022 — 2023</div>
+					<p class="mt-2 text-gray-700">Titre RNCP Niveau 6 (31678 remplacé par 37873)</p>
+					<p class="mt-2 text-gray-700">Bachelor Concepteur Développeur d'Applications (Alternance)</p>
+				</div>
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a
+							href="https://lyceesaintefamille.com/enseignement-superieur/bts-systemes-numeriques-informatique-et-reseau-snir/"
+							target="_blank" rel="noopener">Centre de formation Sainte Famille Saintonge</a></h3>
+					<div class="text-sm text-gray-500">2020 — 2022</div>
+					<p class="mt-2 text-gray-700">BTS SNIR (Alternance)</p>
+				</div>
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a
+							href="https://lyceesaintefamille.com/lycee-technologique/baccalaureat-sti-2d-systeme-information-et-numerique-sin/"
+							target="_blank" rel="noopener">Lycée Sainte Famille Saintonge</a></h3>
+					<div class="text-sm text-gray-500">2018 — 2020</div>
+					<p class="mt-2 text-gray-700">Baccalauréat Technologique STI2D option SIN</p>
+				</div>
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a href="https://www.lasauque.com/" target="_blank" rel="noopener">Lycée
+							La Sauque</a></h3>
+					<div class="text-sm text-gray-500">2017 — 2018</div>
+					<p class="mt-2 text-gray-700">Seconde Générale</p>
+				</div>
+				<div class="p-6 bg-white rounded-2xl shadow">
+					<h3 class="font-semibold"><a
+							href="https://rambaud33.fr/fr/66dc6792_0ee4_4641_95d7_39f7eb50b644.html" target="_blank"
+							rel="noopener">Collège Rambaud</a></h3>
+					<div class="text-sm text-gray-500">2013 — 2017</div>
+					<p class="mt-2 text-gray-700">Diplôme National du Brevet</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+		<h2 class="text-3xl font-bold">Projets</h2>
+		<p class="mt-3 text-gray-700">
+			Projets publics sélectionnés depuis GitHub (exclut les forks et archives).
+		</p>
+
+		<!-- Optional mini filter UI -->
+		<div class="mt-4 flex gap-2">
+			<input id="repo-query" type="search" placeholder="Filtrer (ex: epsi)"
+				class="w-full max-w-sm rounded-lg border px-3 py-2" onkeyup="filterCardsByName(this.value)" />
+		</div>
+
+		<div id="projects-grid"
+			class="mt-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"></div>
+	</section>
+
+	<!-- Contact / Footer -->
+	<footer id="contact" class="bg-gray-900 text-white">
+		<div class="max-w-6xl mx-auto px-6 py-16">
+			<h2 class="text-3xl font-bold">Contact</h2>
+			<p id="captcha-invalid-footer">Veuillez prouver que vous n'êtes pas un robot via le captcha en haut de la
+				page afin de voir mes informations de contact.</p>
+			<div id="contact-protected" class="hidden">
+				<ul class="mt-6 space-y-2 text-white/90">
+					<li><a id="email-footer" class="underline" href="mailto:"></a></li>
+					<li><a id="phone-footer" class="underline" href="tel:"></a></li>
+					<li>🔗 <a class="underline" href="https://www.linkedin.com/in/julien-flusin/" target="_blank"
+							rel="noopener">LinkedIn</a></li>
+					<li>💻 <a class="underline" href="https://github.com/jul-fls" target="_blank"
+							rel="noopener">GitHub</a></li>
+				</ul>
+			</div>
+			<p class="mt-8 text-white/60">Fait en France — © 2020-<span id="year"></span> Julien Flusin</p>
+		</div>
+	</footer>
+	<script src="/scripts/github-repos-projects.js"></script>
+	<script src="/scripts/github-stack-tech.js"></script>
+	<script src="/scripts/cf-turnstile.js"></script>
+	<script src="/scripts/year-and-age.js"></script>
 </body>
 
 </html>
